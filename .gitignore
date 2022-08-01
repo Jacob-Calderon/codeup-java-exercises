@@ -15,6 +15,17 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
+# MacOS
+.DS_Store
+
+# IntelliJ
+.idea/*
+*.iml
+
+# Compiled output
+*.class
+out/*
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
