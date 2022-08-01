@@ -3,37 +3,43 @@
    // upper case for action the hightlighted area
     public class HelloWorld {
 
-        public static void main(String[] args) {
+       public static void main(String[] args) {
 
-            // Prints "Hello, World" in the terminal window.
-            // print is going to print out strings or tokens
-            System.out.println("Hello, World");
-            System.out.println("oh My Goossh");
-        }
+           // Prints "Hello, World" in the terminal window.
+           // print is going to print out strings or tokens
+           System.out.println("Hello, World");
+           System.out.println("oh My Goossh");
+       }
 
        //Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
-        int myFavoriteNumber = 8;
-        {
-            System.out.println(myFavoriteNumber);
-        }
+       int myFavoriteNumber = 8;
+
+       {
+           System.out.println(myFavoriteNumber);
+       }
 
        //Create a String variable named myString and assign a string value to it, then print the variable out to the console.
 
-      String myString  = "Welcome to ThunderDome";
+       String myString = "Welcome to ThunderDome";
+
        {
            System.out.println(myString);
        }
-       double myNumber = 3.14;
-        System.out.println (myNumber);
+
+       double myNumber = 3.14;{
+
+        System.out.println(myNumber);}
 
        int x = 5;{
 System.out.println(x++);
-System.out.println(x);}
-       };
+System.out.println(x);
+
+           int x = Integer.MAX_VALUE;
+           System.out.println(x);
+       }}
 
 
-       int x = Integer.MAX_VALUE;
-        System.out.println(x);
+
 
 
 
