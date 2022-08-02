@@ -17,6 +17,7 @@ public class ConsoleExercises {
 //
 //todo: What happens if you enter less than 3 words? does not return
 //todo: What happens if you enter more than 3 words? only returns first three
+        scanner.nextLine();
         System.out.println("This is what you have entered: " + userInput);
 
         System.out.println("Enter 3 words: ");
@@ -29,6 +30,8 @@ public class ConsoleExercises {
 //
 //Assume that the rooms are perfect rectangles.
 //Assume that the user will enter valid numeric data for length and width.
+        scanner.nextLine();
+
         System.out.println("Enter width: ");
         System.out.println("Enter length: ");
         System.out.println("Enter height: ");
@@ -39,10 +42,11 @@ public class ConsoleExercises {
 //todo: Display the area and perimeter of that classroom.
 //
 // The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width
+        scanner.nextLine();
         System.out.println("This is your area: " + (width * length) + "ftSq");
         System.out.println("This is the perimeter: " + ((width * 2) + (length * 2)) + "Feet");
         System.out.println("This is the volume: " + (width * length * height) + " cubic cm" );
 
-        scanner.useDelimiter("\n");
+        scanner.useDelimiter("\n\n");
     }
 }
