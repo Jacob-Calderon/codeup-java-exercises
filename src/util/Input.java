@@ -60,36 +60,6 @@ import java.util.Scanner;
             double input = scanner.nextDouble();
             return (input <= max && input >= min) ? input : getDouble(min, max);
         }
-
-//    BONUS on Exceptions
-
-        public static int getBinary(){
-            System.out.println("Please enter a number to convert");
-            int input;
-            try {
-                input = Integer.valueOf(getString());
-                int binary = Integer.parseInt(Integer.toBinaryString(input));
-                return binary;
-            } catch (Exception e){
-                System.out.println("defaulted to Zero.\n");
-                input = 0;
-            }
-            return input;
-        }
-        public static int getHexadecimal(){
-            System.out.println("Please enter a number to convert");
-            int input;
-            try {
-                input = Integer.valueOf(getString());
-                int binary = Integer.parseInt(Integer.toHexString(input));
-                return binary;
-            } catch (Exception e){
-                System.out.println("defaulted to Zero.\n");
-                input = 0;
-            }
-            return input;
-        }
     }
-
 
 
