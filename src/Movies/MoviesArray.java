@@ -1,10 +1,12 @@
-package movies;
+package Movies;
+
+import Movies.Movies;
 
 public class MoviesArray {
-    public static Movie[] findAll() {
-        return new Movie[]{
+    public static Movie findAll() {
+        return new movies.MoviesArrays(){
             new Movie("Citizen Kane", "drama"),
-            new Movie("Casablanca", "drama"),
+            new Movie("Casablanca", "drama")
             new Movie("The Godfather", "drama"),
             new Movie("Gone With The Wind", "drama"),
             new Movie("Lawrence Of Arabia", "drama"),

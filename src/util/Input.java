@@ -1,7 +1,7 @@
 package util;
 import java.util.Scanner;
-//import java.lang.String;
-//import java.lang.Integer;
+import java.lang.String;
+import java.lang.Integer;
 
 public class Input {
     private static Scanner scanner;
@@ -60,6 +60,22 @@ public class Input {
         double input = scanner.nextDouble();
         return (input <= max && input >= min) ? input : getDouble(min, max);
     }
+
+
+  //Improve your Input class.
+    //
+    //Your getInt and getDouble methods should make sure that the value returned from
+    // the method is actually an int or a double. You can do this by replacing the use of the
+    // Scanner nextInt() and nextDouble() methods with the existing getString() method you
+    // created in a previous exercise using the following methods to convert the returned
+    // String into the desired datatype:
+    //
+    //Copied to clipboard
+    //Integer.valueOf(String s);
+    //Double.valueOf(String s);
+    //Note these methods will throw a NumberFormatException if the given
+    // input cannot be parsed as an int or double. Your methods on the Input class
+    // should handle these exceptions, you can use a try-catch for this.
 }
 
 
