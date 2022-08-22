@@ -1,8 +1,8 @@
 package Movies;
 
 
-    public class movies {// TODO: change this to wherever your Input class is located
-import movies.MoviesArray.findall();
+    public class Movies {// TODO: change this to wherever your Input class is located
+// import movies.MoviesArrays ();
 
         public class MoviesArrays {
             public static final int INVALID_CHOICE = -1;
