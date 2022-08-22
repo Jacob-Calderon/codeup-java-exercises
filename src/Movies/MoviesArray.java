@@ -3,8 +3,8 @@ package Movies;
 import Movies.Movies;
 
 public class MoviesArray {
-    public static Movie findAll() {
-        return new movies.MoviesArrays(){
+    public static Movie [] findAll() {
+        Movie [] movies = new Movie[] {
             new Movie("Citizen Kane", "drama"),
             new Movie("Casablanca", "drama")
             new Movie("The Godfather", "drama"),
@@ -106,5 +106,6 @@ public class MoviesArray {
             new Movie("Guess Who's Coming To Dinner", "drama"),
             new Movie("Yankee Doodle Dandy", "musical")
         };
+        return movies;
     }
 }
