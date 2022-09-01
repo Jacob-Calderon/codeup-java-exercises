@@ -1,2 +1,7 @@
-package StringUtils;public class StringUtils {
+package StringUtils;
+
+public class StringUtils {
+
+
+
 }
