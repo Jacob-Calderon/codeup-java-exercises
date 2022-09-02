@@ -1,64 +1,66 @@
 //package Movies;
 //
+//import Movies.MoviesArray;
 //
-//    public class MoviesApplication {// TODO: change this to wherever your Input class is located
-//// import movies.MoviesArrays ();
+//public class MoviesApplication {
+//    public static void main(String[] args) {
+//        Input userInput = new Input();
+//        MoviesApplication mApplication = new MoviesApplication();
+//        MoviesArray movies = new MoviesArray();
+//        int answer = 1;
 //
-//        public class MoviesArrays {
-//            public static final int INVALID_CHOICE = -1;
-//            public static final int EXIT_CHOICE = 0;
+//        System.out.println("Greetings Noob, tell me what you want?");
+//        do {
+//            System.out.printf("0 - exit" +
+//                    "\n1 - View all movies" +
+//                    "\n2 - View movies in the animated category" +
+//                    "\n3 - View movies in the drama category" +
+//                    "\n4 - View movies in the horror category" +
+//                    "\n5 - View movies in the scifi category" +
+//                    "\n");
+//        }
+//        System.out.printf("Enter your choice: ");
+//        answer = userInput.getInt(0, 5);
+//        Movie[] moviesArray = movies.findAll();
 //
-//            public static void main(String[] args) {
-//                Input input = new Input();
+//        if (answer == 1) {
+//            mApplication.filterMovies(moviesArray);
+//        } else if (answer == 0) {
+//            System.exit(0);
+//        } else {
+//            mApplication.filterMovies(moviesArray, mApplication.getCategoryName(answer));
+//        }
+//    }  while (answer > 0);
 //
-//                // loop until the user says he/she does not wish to continue
-//                int choice = INVALID_CHOICE;
-//                while(choice != EXIT_CHOICE) {
-//                    printMenu();
-//
-//                    choice = input.getInt(0, 5);
-//
-//                    doChoice(choice);
-//
-//                }
+//    public void filterMovies(Movie[] movies, String category) {
+//        for (Movie movie : movies) {
+//            if (movie.category.equals(category)) {
+//                movie.printMovie(movie);
 //            }
-//
-//            private static void printMenu() {
-//                System.out.print("""
-//                What would you like to do?
-//
-//                0 - exit
-//                1 - view all movies
-//                2 - view movies in the musical category
-//                3 - view movies in the drama category
-//                4 - view movies in the horror category
-//                5 - view movies in the scifi category
-//
-//                Enter your choice: """);
-//            }
-//
-//            private static void doChoice(int choice) {
-//                // TODO: call your functions based on whatever the user's choice is
-//                switch(choice) {
-//                    case 1:
-//                        // TODO: view all movies
-//                        break;
-//                    case 2:
-//                        // TODO: view movies in the musical category
-//                        break;
-//                    case 3:
-//                        // TODO: view movies in the drama category
-//                        break;
-//                    case 4:
-//                        // TODO: view movies in the horror category
-//                        break;
-//                    case 5:
-//                        // TODO: view movies in the scifi category
-//                        break;
-//                }
-//            }
-//
 //        }
 //    }
 //
+//    public String getCategoryName(int answer) {
+//        String name = "";
+//        switch(answer) {
+//            case 2:
+//                name = "animated";
+//                break;
+//            case 3:
+//                name = "drama";
+//                break;
+//            case 4:
+//                name = "horror";
+//                break;
+//            case 5:
+//                name = "scifi";
+//                break;
+//            default:
+//        }
+//        return name;
+//    }
+//}
+//
+//
+//    }
 //}

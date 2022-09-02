@@ -8,6 +8,13 @@ public class Movie {
         this.category = category;
     }
 
+    public static void main(String[] args) {
+        /* Hello Movie */
+    }
 
+    public void printMovie(Movie movie) {
+        System.out.printf("Movie: %s Category: %s\n", movie.name, movie.category);
+    }
 }
+
 
